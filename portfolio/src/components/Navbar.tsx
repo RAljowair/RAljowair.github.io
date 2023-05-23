@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <>
       <div
-        className="flex mx-auto content-center justify-around columns-2 py-3"
+        className="flex w-full content-center justify-around columns-2 py-3"
         style={{ backgroundColor: "#ffffff" }}>
         <img
           className="logo"
@@ -32,7 +32,7 @@ function Navbar() {
           <Navitem text="contact" />
         </div>
         <div className="sm:hidden flex flex-row my-auto gap-20 sm:invisible">
-          BURGER MENU
+          MENU
         </div>
       </div>
     </>

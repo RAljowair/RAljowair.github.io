@@ -7,19 +7,34 @@ import SVGCircle from "../assets/circle.svg";
 
 function HeroSection() {
   return (
-    <header className="personal-photo flex mx-auto content-center justify-center columns-2 gap-10">
-      <img src={PersonalImage} alt="Rayan Photo" />
-      <div className="name-roles-container flex flex-col justify-center text-center">
-        <h1 className="font-bold">Rayan Jowair</h1>
-        <h2>Front End Developer</h2>
-        <img
-          className="self-center"
+    <header className="personal-photo w-50% flex justify-center columns-2 gap-5 sm:gap-10 pt-12 sm:pt-52">
+      <img
+        className="w-40 sm:w-52 md:w-96"
+        src={PersonalImage}
+        alt="Rayan Photo"
+      />
+      <div className="name-roles-container flex flex-col justify-center text-center gap-3 sm:gap-5">
+        <h1 className="font-bold text-3xl z-10 sm:text-5xl md:text-8xl sm:py-5">
+          Rayan Jowair
+        </h1>
+        <h2 className="font-medium text-xl z-10 sm:text-3xl md:text-4xl">
+          Front End Developer
+        </h2>
+        <motion.img
+          className="self-center h-4 w-4 sm:h-6 sm:w-6"
           src={SVGCircle}
           alt="circle between roles"
-          height={"20rem"}
-          width={"20rem"}
+          whileHover={{
+            scale: 30,
+            style: {
+              zIndex: -1,
+            },
+          }}
+          transition={{ duration: 0.5 }}
         />
-        <h2>UX / UI Designer</h2>
+        <h2 className="font-medium text-xl z-10 sm:text-3xl md:text-4xl">
+          UX / UI Designer
+        </h2>
       </div>
     </header>
   );

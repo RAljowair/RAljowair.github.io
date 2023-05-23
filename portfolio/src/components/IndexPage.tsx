@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 
 function IndexPage() {
   return (
-    <div className="columns-1">
+    <div className="flex flex-col">
       <Navbar />
       <HeroSection />
     </div>
